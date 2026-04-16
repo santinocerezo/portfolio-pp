@@ -16,7 +16,7 @@ export const projects = [
     description:
       "Clon de Slither.io con estética neon. Jugás contra 9 bots con IA reactiva, historial de scores por jugador sin contraseña y leaderboard global en tiempo real vía Socket.io.",
     technologies: ["Node.js", "Socket.io", "HTML5 Canvas", "PostgreSQL", "Express.js"],
-    url: "https://slither-pp.up.railway.app",
+    url: "https://slither-pp-production.up.railway.app",
     github: "https://github.com/santinocerezo/slither-pp",
     category: "Game / Full Stack",
   },
@@ -27,7 +27,7 @@ export const projects = [
     description:
       "Tetris clásico en el navegador con sistema de puntuación, niveles, historial de mejores partidas y soporte multijugador.",
     technologies: ["Node.js", "Socket.io", "HTML5 Canvas", "Express.js"],
-    url: "https://tetris-pp.up.railway.app",
+    url: "https://tetris-pp-production.up.railway.app",
     github: "https://github.com/santinocerezo/tetris-pp",
     category: "Game / Full Stack",
   },
