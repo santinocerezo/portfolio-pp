@@ -78,6 +78,13 @@ export const technologies = [
 
 export const experience = [
   {
+    role: "Desarrollador Web Full Stack – Freelance",
+    company: "Independiente",
+    period: "2025 – Presente",
+    description:
+      "Desarrollo de soluciones web a medida para clientes, end-to-end: desde la toma de requerimientos hasta el deploy en producción. Stack principal React + Node.js con PostgreSQL, enfoque en sistemas que resuelven problemas operativos concretos.",
+  },
+  {
     role: "Team Leader – Contratistas Remotos",
     company: "Logística Argentina",
     period: "2022 – 2025",
