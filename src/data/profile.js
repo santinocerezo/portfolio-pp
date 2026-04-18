@@ -82,7 +82,7 @@ export const experience = [
     company: "Independiente",
     period: "2025 – Presente",
     description:
-      "Prospección y captación de clientes propios, enfocado en comercios y PyMEs que necesitan presencia digital real. Ofrezco un paquete integral: desarrollo de sitios web a medida (React + Node.js), gestión y optimización de fichas de Google Maps (SEO local), campañas de Google Ads y Meta Ads, y automatización de WhatsApp Business para atención al cliente y seguimiento de leads. Trabajo end-to-end, desde la primera reunión hasta el deploy y soporte post-entrega.",
+      "Prospección y captación de clientes propios, enfocado en comercios y PyMEs que necesitan presencia digital real. Ofrezco un paquete integral: desarrollo de sitios web a medida (React + Node.js) con chatbot de IA integrado para atención automatizada 24/7, gestión y optimización de fichas de Google Maps (SEO local), campañas de Google Ads y Meta Ads, y automatización de WhatsApp Business para seguimiento de leads. Trabajo end-to-end, desde la primera reunión hasta el deploy y soporte post-entrega.",
   },
   {
     role: "Team Leader – Contratistas Remotos",
