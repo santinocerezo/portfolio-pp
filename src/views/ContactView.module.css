@@ -1,0 +1,110 @@
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  min-height: calc(100vh - 144px);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.title {
+  font-size: clamp(36px, 5.5vw, 64px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+  line-height: 1.05;
+}
+
+.accent {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 580px;
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.channel {
+  display: grid;
+  grid-template-columns: 140px 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: padding 0.25s ease, color 0.2s ease;
+}
+
+.channel:hover {
+  padding-left: 12px;
+}
+
+.channel:hover .channelValue {
+  color: var(--accent);
+}
+
+.channel:hover .channelArrow {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.channelLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+.channelValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+
+.channelArrow {
+  font-size: 20px;
+  color: var(--text-faint);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.footer {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  .channel { grid-template-columns: 1fr auto; }
+  .channelLabel { display: none; }
+}
