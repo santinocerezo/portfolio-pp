@@ -82,7 +82,7 @@ export const experience = [
     company: "Independiente",
     period: "2025 – Presente",
     description:
-      "Desarrollo de soluciones web a medida para clientes, end-to-end: desde la toma de requerimientos hasta el deploy en producción. Stack principal React + Node.js con PostgreSQL, enfoque en sistemas que resuelven problemas operativos concretos.",
+      "Prospección y captación de clientes propios, enfocado en comercios y PyMEs que necesitan presencia digital real. Ofrezco un paquete integral: desarrollo de sitios web a medida (React + Node.js), gestión y optimización de fichas de Google Maps (SEO local), campañas de Google Ads y Meta Ads, y automatización de WhatsApp Business para atención al cliente y seguimiento de leads. Trabajo end-to-end, desde la primera reunión hasta el deploy y soporte post-entrega.",
   },
   {
     role: "Team Leader – Contratistas Remotos",
