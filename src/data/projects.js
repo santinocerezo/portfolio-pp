@@ -23,14 +23,14 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Búsqueda de Clientes",
+    name: "Búsqueda de Clientes (Demo)",
     year: 2026,
     description:
-      "Herramienta de prospección comercial que identifica negocios locales sin sitio web pero con teléfono, los muestra en un mapa interactivo (Leaflet + OpenStreetMap) y permite gestionarlos como pipeline (contactado, interesado, cliente, descartado) con notas persistentes. Scraper en Python con Google Places API, backend en FastAPI + SQLite, frontend en React + Vite. Deploy single-service en Railway.",
-    technologies: ["Python", "FastAPI", "React", "Vite", "Leaflet", "SQLite", "Google Places API"],
-    url: "https://busqueda-clientes-pp-production.up.railway.app",
-    github: "https://github.com/santinocerezo/busqueda-clientes-pp",
-    category: "Full Stack",
+      "Herramienta de prospección comercial: identifica negocios locales sin sitio web pero con teléfono, los muestra en un mapa interactivo y permite gestionarlos como pipeline (contactado, interesado, cliente, descartado) con notas persistentes. Esta es la demo pública con 500 negocios ficticios — el mapa usa Leaflet + OpenStreetMap y el estado se guarda en el browser (localStorage). La versión de producción (privada) scrapea negocios reales con Google Places API y usa FastAPI + SQLite + Google Maps.",
+    technologies: ["React", "Leaflet", "OpenStreetMap", "Python", "HTML5", "CSS3"],
+    url: "https://buscador-clientes-demo-pp-production.up.railway.app",
+    github: "https://github.com/santinocerezo/buscador-clientes-demo-pp",
+    category: "Frontend / Demo",
   },
   {
     id: 4,
