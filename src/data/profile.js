@@ -4,7 +4,7 @@ export const profile = {
   title: "Desarrollador Full Stack",
   subtitle: "Programación · Logística · Datos",
   email: "santinocowork@gmail.com",
-  linkedin: "https://linkedin.com/in/tu-usuario", // actualizá con tu URL real
+  linkedin: "https://www.linkedin.com/in/santino-cerezo-6a24773b8/",
   bio: [
     "Mi nombre es Santino Cerezo, tengo 20 años y soy de Argentina. Empecé a programar con una curiosidad simple que rápidamente se convirtió en algo serio. Hoy combino la formación académica en la UTN con el desarrollo de proyectos reales, buscando siempre construir software que resuelva problemas concretos.",
     "Tengo experiencia laboral desde los 18 años en el sector logístico, donde lideré equipos de trabajo, gestioné operaciones, coordiné personas de forma remota y manejé múltiples tareas simultáneamente bajo presión. Esa experiencia me dio una perspectiva que va más allá del código: entiendo cómo funcionan los sistemas en la realidad.",
