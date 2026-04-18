@@ -1,18 +1,15 @@
 import { education, technologies } from "../data/profile";
+import ViewHeader from "../components/ViewHeader";
 import styles from "./FormationView.module.css";
 
 export default function FormationView() {
   return (
     <section className={styles.view}>
-      <header className={styles.header}>
-        <p className={styles.eyebrow}>04 · Formación</p>
-        <h1 className={styles.title}>Aprender haciendo.</h1>
-        <p className={styles.lead}>
-          Formación académica en la UTN, certificaciones continuas en
-          ciberseguridad e idiomas, y una pila técnica que crece con cada
-          proyecto.
-        </p>
-      </header>
+      <ViewHeader
+        eyebrow="04 · Formación"
+        title="Aprender haciendo."
+        lead="Formación académica en la UTN, certificaciones continuas en ciberseguridad e idiomas, y una pila técnica que crece con cada proyecto."
+      />
 
       <div className={styles.section}>
         <h2 className={styles.sectionTitle}>Educación</h2>

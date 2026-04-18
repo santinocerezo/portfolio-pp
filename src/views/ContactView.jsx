@@ -1,20 +1,17 @@
 import { profile } from "../data/profile";
+import ViewHeader from "../components/ViewHeader";
 import styles from "./ContactView.module.css";
 
 export default function ContactView() {
   return (
     <section className={styles.view}>
-      <header className={styles.header}>
-        <p className={styles.eyebrow}>05 · Contacto</p>
-        <h1 className={styles.title}>
-          Hablemos.<br />
-          <span className={styles.accent}>Tengo tiempo para proyectos serios.</span>
-        </h1>
-        <p className={styles.lead}>
-          Si tenés un proyecto en mente, una oportunidad laboral, o simplemente
-          querés charlar sobre código, escribime. Respondo en menos de 24 hs.
-        </p>
-      </header>
+      <ViewHeader
+        eyebrow="05 · Contacto"
+        lead="Si tenés un proyecto en mente, una oportunidad laboral, o simplemente querés charlar sobre código, escribime. Respondo en menos de 24 hs."
+      >
+        Hablemos.<br />
+        <span className="accent">Tengo tiempo para proyectos serios.</span>
+      </ViewHeader>
 
       <div className={styles.channels}>
         <a

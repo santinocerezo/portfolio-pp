@@ -1,18 +1,15 @@
 import { experience } from "../data/profile";
+import ViewHeader from "../components/ViewHeader";
 import styles from "./ExperienceView.module.css";
 
 export default function ExperienceView() {
   return (
     <section className={styles.view}>
-      <header className={styles.header}>
-        <p className={styles.eyebrow}>02 · Experiencia</p>
-        <h1 className={styles.title}>Liderar. Coordinar. Ejecutar.</h1>
-        <p className={styles.lead}>
-          Desde los 18 años trabajando en entornos reales. El liderazgo y la
-          gestión de equipos remotos me dieron una perspectiva que trasciende
-          el código.
-        </p>
-      </header>
+      <ViewHeader
+        eyebrow="02 · Experiencia"
+        title="Liderar. Coordinar. Ejecutar."
+        lead="Desde los 18 años trabajando en entornos reales. El liderazgo y la gestión de equipos remotos me dieron una perspectiva que trasciende el código."
+      />
 
       <ol className={styles.timeline}>
         {experience.map((item, i) => (

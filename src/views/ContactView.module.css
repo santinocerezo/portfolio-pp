@@ -5,42 +5,6 @@
   min-height: calc(100vh - 144px);
 }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 720px;
-}
-
-.eyebrow {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  text-transform: uppercase;
-  font-family: ui-monospace, "SF Mono", Menlo, monospace;
-}
-
-.title {
-  font-size: clamp(36px, 5.5vw, 64px);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--text-primary);
-  line-height: 1.05;
-}
-
-.accent {
-  color: var(--text-muted);
-  font-weight: 600;
-}
-
-.lead {
-  font-size: 16px;
-  line-height: 1.75;
-  color: var(--text-secondary);
-  max-width: 580px;
-}
-
 .channels {
   display: flex;
   flex-direction: column;

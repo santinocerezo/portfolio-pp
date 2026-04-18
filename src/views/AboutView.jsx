@@ -1,13 +1,14 @@
 import { profile, interests } from "../data/profile";
+import ViewHeader from "../components/ViewHeader";
 import styles from "./AboutView.module.css";
 
 export default function AboutView() {
   return (
     <section className={styles.view}>
-      <header className={styles.header}>
-        <p className={styles.eyebrow}>01 · Sobre mí</p>
-        <h1 className={styles.title}>La historia detrás del código.</h1>
-      </header>
+      <ViewHeader
+        eyebrow="01 · Sobre mí"
+        title="La historia detrás del código."
+      />
 
       <div className={styles.body}>
         {profile.bio.map((p, i) => (

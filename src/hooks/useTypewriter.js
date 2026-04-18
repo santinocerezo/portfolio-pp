@@ -8,26 +8,25 @@ export function useTypewriter(texts, speed = 60, pause = 2000) {
 
   useEffect(() => {
     const current = texts[index];
+    const atEnd = !deleting && charIndex === current.length;
+    const atStart = deleting && charIndex === 0;
+
+    const delay = atEnd ? pause : deleting ? speed / 2 : speed;
 
     const timeout = setTimeout(() => {
-      if (!deleting) {
-        setDisplay(current.slice(0, charIndex + 1));
-        if (charIndex + 1 === current.length) {
-          setTimeout(() => setDeleting(true), pause);
-        } else {
-          setCharIndex((c) => c + 1);
-        }
-      } else {
-        setDisplay(current.slice(0, charIndex - 1));
-        if (charIndex - 1 === 0) {
-          setDeleting(false);
-          setCharIndex(0);
-          setIndex((i) => (i + 1) % texts.length);
-        } else {
-          setCharIndex((c) => c - 1);
-        }
+      if (atEnd) {
+        setDeleting(true);
+        return;
       }
-    }, deleting ? speed / 2 : speed);
+      if (atStart) {
+        setDeleting(false);
+        setIndex((i) => (i + 1) % texts.length);
+        return;
+      }
+      const next = deleting ? charIndex - 1 : charIndex + 1;
+      setDisplay(current.slice(0, next));
+      setCharIndex(next);
+    }, delay);
 
     return () => clearTimeout(timeout);
   }, [charIndex, deleting, index, texts, speed, pause]);

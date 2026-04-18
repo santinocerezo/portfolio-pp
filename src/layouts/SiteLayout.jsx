@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { profile } from "../data/profile";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../context/useTheme";
 import styles from "./SiteLayout.module.css";
 
 const navItems = [

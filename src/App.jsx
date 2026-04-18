@@ -6,7 +6,6 @@ import ExperienceView from "./views/ExperienceView";
 import ProjectsView from "./views/ProjectsView";
 import FormationView from "./views/FormationView";
 import ContactView from "./views/ContactView";
-import "./App.css";
 
 export default function App() {
   return (
