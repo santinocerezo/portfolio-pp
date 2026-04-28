@@ -12,13 +12,13 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Fabriculumm",
+    name: "GOADs — Funnel de Conversión",
     year: 2026,
     description:
-      "Generador de CVs profesionales sin registro. El usuario llena un formulario, elige entre 5 templates (Recomendado, Moderno, Minimalista, Creativo, Ejecutivo) y descarga el CV en PDF. Frontend en React + Vite + Tailwind, backend en Node.js + Express, generación de PDF con Puppeteer, soporte i18n español/inglés con i18next. Arquitectura monorepo con workspaces, deployada en Railway vía Docker.",
-    technologies: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "Puppeteer", "i18next", "Docker"],
-    url: "https://fabriculumm-production.up.railway.app",
-    github: "https://github.com/santinocerezo/fabriculumm-pp",
+      "Plataforma full stack que implementa un funnel de venta completo para un infoproducto de Marketing Digital: landing → checkout → upsell → downsell → acceso. Incluye captura de leads con tracking de UTMs, motor propio de A/B testing por variante asignada por sesión, integración con Stripe (modo test) y webhook handler, emails transaccionales con Resend, eventos a Meta Pixel y GA4 (PageView, Lead, InitiateCheckout, Purchase) y panel de admin con JWT que muestra KPIs, embudo y breakdown por variante. Frontend React + Vite + Tailwind, backend Node + Express + PostgreSQL, deploy en Railway vía Docker.",
+    technologies: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Stripe", "JWT", "Docker"],
+    url: "https://goads-server-production-32b7.up.railway.app",
+    github: "https://github.com/santinocerezo/Goads",
     category: "Full Stack",
   },
   {
