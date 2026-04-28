@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   min-height: calc(100vh - 144px);
+  min-height: calc(100dvh - 144px);
 }
 
 .label {
@@ -134,5 +135,21 @@
 }
 
 @media (max-width: 600px) {
-  .typed { font-size: 18px; }
+  .typed { font-size: 18px; min-height: 28px; }
+  .label { margin-bottom: 18px; }
+  .title { margin-bottom: 24px; }
+  .sub { margin-bottom: 32px; font-size: 14px; }
+  .actions { gap: 10px; margin-bottom: 56px; }
+  .btnPrimary, .btnSecondary {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 14px 20px;
+    min-width: 140px;
+  }
+  .quickLinks { grid-template-columns: 1fr 1fr; padding-top: 24px; }
+  .quickLink { padding: 14px 0; }
+}
+
+@media (max-width: 380px) {
+  .quickLinks { grid-template-columns: 1fr; }
 }

@@ -66,5 +66,7 @@
 }
 
 @media (max-width: 720px) {
-  .item { grid-template-columns: 1fr; gap: 8px; }
+  .item { grid-template-columns: 1fr; gap: 10px; padding: 20px 0; }
+  .role { font-size: 17px; }
+  .description { font-size: 14px; line-height: 1.65; }
 }

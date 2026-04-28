@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 56px;
   min-height: calc(100vh - 144px);
+  min-height: calc(100dvh - 144px);
 }
 
 .channels {
@@ -69,6 +70,21 @@
 }
 
 @media (max-width: 600px) {
-  .channel { grid-template-columns: 1fr auto; }
-  .channelLabel { display: none; }
+  .view { gap: 40px; }
+  .channel {
+    grid-template-columns: 1fr auto;
+    padding: 20px 0;
+    gap: 16px;
+  }
+  .channel:hover { padding-left: 0; }
+  .channelLabel {
+    display: block;
+    grid-column: 1 / -1;
+    margin-bottom: -8px;
+  }
+  .channelValue {
+    font-size: 16px;
+    word-break: break-word;
+    min-width: 0;
+  }
 }

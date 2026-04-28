@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { profile } from "../data/profile";
 import { useTheme } from "../context/useTheme";
 import styles from "./SiteLayout.module.css";
@@ -19,15 +19,44 @@ export default function SiteLayout() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const closeMobile = () => setMobileOpen(false);
 
+  useEffect(() => {
+    if (mobileOpen) {
+      const original = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = original;
+      };
+    }
+  }, [mobileOpen]);
+
   return (
     <div className={styles.shell}>
-      <button
-        className={styles.mobileToggle}
-        onClick={() => setMobileOpen((v) => !v)}
-        aria-label="Abrir menú"
-      >
-        {mobileOpen ? "✕" : "☰"}
-      </button>
+      <div className={styles.mobileBar}>
+        <button
+          className={styles.mobileThemeToggle}
+          onClick={toggle}
+          aria-label="Cambiar tema"
+        >
+          {theme === "dark" ? "☀" : "☾"}
+        </button>
+        <button
+          className={styles.mobileToggle}
+          onClick={() => setMobileOpen((v) => !v)}
+          aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={mobileOpen}
+        >
+          {mobileOpen ? "✕" : "☰"}
+        </button>
+      </div>
+
+      {mobileOpen && (
+        <button
+          className={styles.overlay}
+          onClick={closeMobile}
+          aria-label="Cerrar menú"
+          tabIndex={-1}
+        />
+      )}
 
       <aside className={`${styles.sidebar} ${mobileOpen ? styles.open : ""}`}>
         <div className={styles.brand}>

@@ -139,10 +139,13 @@
 
 @media (max-width: 600px) {
   .header { padding: 16px; flex-wrap: wrap; gap: 12px; }
-  .headerLeft { gap: 8px; }
+  .headerLeft { gap: 8px; width: 100%; }
   .name { font-size: 15px; }
-  .headerRight { width: 100%; justify-content: flex-end; }
+  .year { font-size: 12px; }
+  .headerRight { width: 100%; justify-content: flex-end; gap: 8px; }
+  .liveLink, .githubLink { font-size: 12px; padding: 5px 10px; }
   .body { padding: 0 16px 16px; }
+  .description { font-size: 13.5px; }
 }
 
 .githubLink {

@@ -128,5 +128,11 @@
 }
 
 @media (max-width: 720px) {
-  .item { grid-template-columns: 1fr; gap: 8px; }
+  .item { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
+  .techGrid { grid-template-columns: 1fr; gap: 24px; }
+}
+
+@media (max-width: 480px) {
+  .degree { font-size: 15px; }
+  .institution { font-size: 13px; }
 }

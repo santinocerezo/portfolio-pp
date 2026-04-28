@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 320px 1fr;
   min-height: 100vh;
+  min-height: 100dvh;
   background: var(--bg);
 }
 
@@ -10,6 +11,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   padding: 48px 32px 32px;
@@ -180,21 +182,53 @@
   }
 }
 
-/* ── Mobile toggle ── */
-.mobileToggle {
+/* ── Mobile bar (theme + menu toggle) ── */
+.mobileBar {
   display: none;
   position: fixed;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
   z-index: 20;
+  gap: 8px;
+}
+
+.mobileToggle,
+.mobileThemeToggle {
   background: var(--bg-card);
   border: 1px solid var(--border-strong);
   color: var(--text-primary);
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
   font-size: 18px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.mobileToggle:hover,
+.mobileThemeToggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  animation: overlayFade 0.25s ease;
+}
+
+@keyframes overlayFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ── Responsive ── */
@@ -207,23 +241,39 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 280px;
+    width: min(85vw, 320px);
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     border-right: 1px solid var(--border);
+    box-shadow: 0 0 0 transparent;
   }
 
   .sidebar.open {
     transform: translateX(0);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
   }
 
-  .mobileToggle {
+  .mobileBar {
     display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+
+  .overlay {
+    display: block;
   }
 
   .viewport {
-    padding: 72px 24px 48px;
+    padding: 80px 24px 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .viewport {
+    padding: 76px 18px 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .viewport {
+    padding: 76px 14px 32px;
   }
 }
