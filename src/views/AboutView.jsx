@@ -32,7 +32,7 @@ export default function AboutView() {
 
         <div className={styles.block}>
           <span className={styles.label}>Ubicación</span>
-          <p className={styles.detail}>Argentina · Disponible remoto</p>
+          <p className={styles.detail}>Buenos Aires, Argentina · Disponible remoto</p>
         </div>
       </div>
     </section>
