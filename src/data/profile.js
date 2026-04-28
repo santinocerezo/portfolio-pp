@@ -38,8 +38,8 @@ export const education = [
     status: "Completada",
   },
   {
-    degree: "Educación Secundaria",
-    institution: "Colegio",
+    degree: "Secundario Completo en Bachillerato de Cs. Sociales",
+    institution: "Inmaculada Concepción",
     period: "– 2022",
     status: "Completada",
   },
@@ -94,7 +94,7 @@ export const experience = [
   {
     role: "Coordinador de Personal",
     company: "Correo Argentino",
-    period: "2022 – Presente",
+    period: "2022 – 2025",
     description:
       "Coordinación de equipos operativos en el área de distribución y logística.",
   },

@@ -7,7 +7,7 @@ export default function ContactView() {
     <section className={styles.view}>
       <ViewHeader
         eyebrow="05 · Contacto"
-        lead="Si tenés un proyecto en mente, una oportunidad laboral, o simplemente querés charlar sobre código, escribime. Respondo en menos de 24 hs."
+        lead="Si tenés un proyecto en mente, una oportunidad laboral, o simplemente querés charlar sobre código, escribime."
       >
         Hablemos.<br />
         <span className="accent">Tengo tiempo para proyectos serios.</span>
@@ -30,7 +30,7 @@ export default function ContactView() {
           className={styles.channel}
         >
           <span className={styles.channelLabel}>LinkedIn</span>
-          <span className={styles.channelValue}>Conectemos</span>
+          <span className={styles.channelValue}>Contáctame</span>
           <span className={styles.channelArrow}>↗</span>
         </a>
 
