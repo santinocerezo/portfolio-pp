@@ -9,6 +9,7 @@ export const profile = {
     "Mi nombre es Santino Cerezo, tengo 20 años y soy de Argentina. Empecé a programar con una curiosidad simple que rápidamente se convirtió en algo serio. Hoy combino la formación académica en la UTN con el desarrollo de proyectos reales, buscando siempre construir software que resuelva problemas concretos.",
     "Tengo experiencia laboral desde los 18 años en el sector logístico, donde lideré equipos de trabajo, gestioné operaciones, coordiné personas de forma remota y manejé múltiples tareas simultáneamente bajo presión. Esa experiencia me dio una perspectiva que va más allá del código: entiendo cómo funcionan los sistemas en la realidad.",
     "Me apasionan la ciberseguridad, la inteligencia artificial y el análisis de datos. Son las áreas donde veo el mayor impacto futuro y hacia donde dirijo mi formación continua. Soy de los que aprende haciendo, y cada proyecto es una oportunidad para ir un paso más adelante.",
+    "En lo que estoy trabajando actualmente: profundizando en Google Ads y Google Analytics 4 para integrar medición y gestión de campañas end-to-end en proyectos con clientes finales. Apunto a cerrar el circuito completo: desarrollo del funnel, definición de eventos de conversión, implementación del tracking y operación de las campañas que lo alimentan.",
   ],
 };
 
@@ -65,6 +66,10 @@ export const technologies = [
   {
     category: "Bases de datos",
     items: ["PostgreSQL", "MySQL", "MongoDB", "SQL"],
+  },
+  {
+    category: "Pagos, email y marketing",
+    items: ["Stripe", "Resend", "Meta Pixel", "Google Analytics 4", "Google Ads", "Meta Ads", "A/B testing"],
   },
   {
     category: "Herramientas",

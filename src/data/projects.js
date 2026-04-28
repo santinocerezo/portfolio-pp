@@ -15,8 +15,8 @@ export const projects = [
     name: "GOADs — Funnel de Conversión",
     year: 2026,
     description:
-      "Plataforma full stack que implementa un funnel de venta completo para un infoproducto de Marketing Digital: landing → checkout → upsell → downsell → acceso. Incluye captura de leads con tracking de UTMs, motor propio de A/B testing por variante asignada por sesión, integración con Stripe (modo test) y webhook handler, emails transaccionales con Resend, eventos a Meta Pixel y GA4 (PageView, Lead, InitiateCheckout, Purchase) y panel de admin con JWT que muestra KPIs, embudo y breakdown por variante. Frontend React + Vite + Tailwind, backend Node + Express + PostgreSQL, deploy en Railway vía Docker.",
-    technologies: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Stripe", "JWT", "Docker"],
+      "Funnel de venta full stack end-to-end para un infoproducto de marketing digital: landing → checkout → upsell → downsell → acceso. Captura de leads con validación Zod y tracking de UTMs, motor propio de A/B testing por variante asignada por sesión (hash determinista), checkout real con Stripe Checkout Sessions y webhooks que verifican firma, emails transaccionales con Resend (welcome + purchase confirmation, log auditable en DB), tracking dual a backend + Meta Pixel + GA4 con eventos estándar (PageView, Lead, InitiateCheckout, Purchase) para que las plataformas de ads optimicen contra ellos. Panel de admin con login JWT (bcrypt) que muestra KPIs, embudo con drop-off por etapa, leads diarios y breakdown de eventos por variante de A/B. Frontend React + Vite + Tailwind, backend Node + Express + Zod + PostgreSQL, deploy en Railway con Docker multi-stage y migraciones manejadas como pre-deploy.",
+    technologies: ["React", "Vite", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Stripe", "Resend", "Meta Pixel", "GA4", "JWT", "Docker", "Railway"],
     url: "https://goads-server-production-32b7.up.railway.app",
     github: "https://github.com/santinocerezo/Goads",
     category: "Full Stack",
