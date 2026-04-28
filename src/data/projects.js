@@ -59,8 +59,8 @@ export const projects = [
     name: "Tetris Neon Edition",
     year: 2025,
     description:
-      "Tetris clásico en el navegador con estética neon construido con HTML5 Canvas y vanilla JS. Incluye sistema de niveles, historial de mejores partidas por apodo, leaderboard en tiempo real vía Socket.io y controles táctiles para móvil (swipe, doble tap para hard drop). Persistencia en PostgreSQL.",
-    technologies: ["Node.js", "Socket.io", "HTML5 Canvas", "PostgreSQL", "Express.js", "Vanilla JS"],
+      "Tetris clásico en el navegador con estética neon construido con HTML5 Canvas y vanilla JS. Incluye 7-bag randomizer y wall kicks estilo SRS, ghost piece, hold piece, sistema de niveles, historial de mejores partidas por apodo, leaderboard global y controles táctiles para móvil (swipe, doble tap para hard drop). Persistencia en PostgreSQL con fallback automático a SQLite.",
+    technologies: ["Node.js", "Express.js", "HTML5 Canvas", "PostgreSQL", "SQLite", "Vanilla JS"],
     url: "https://tetris-pp-production.up.railway.app",
     github: "https://github.com/santinocerezo/tetris-pp",
     category: "Game / Full Stack",
